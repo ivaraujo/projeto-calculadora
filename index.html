@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Calculadora Simples</h1>
-    <div>
-        <p>Primeiro valor: <input type="number" name="pri_valor" id="pri_valor"></p>
-        <p>Segundo valor: <input type="number" name="sec_valor" id="sec_valor"></p>
-        <p>
-            <input type="button" value="+" onclick="somar()">
-            <input type="button" value="-" onclick="subtrair()">
-            <input type="button" value="x" onclick="multiplicar()">
-            <input type="button" value="/" onclick="dividir()">
-        </p>        
-    </div>
-    <div id="resposta">
+    <main>
+        <h1>Calculadora Simples</h1>
+        <div>
+            <p>Primeiro valor: <input type="number" name="pri_valor" id="pri_valor"></p>
+            <p>Segundo valor: <input type="number" name="sec_valor" id="sec_valor"></p>
+            <p id="botoes">
+                <input type="button" value="+" onclick="somar()">
+                <input type="button" value="-" onclick="subtrair()">
+                <input type="button" value="x" onclick="multiplicar()">
+                <input type="button" value="/" onclick="dividir()">
+            </p>
+            <div id="resposta">
 
-    </div>
+            </div>        
+        </div>
+    </main>
+    
+    
     <script src="calculadora.js"></script>
 </body>
 </html>
