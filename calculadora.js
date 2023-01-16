@@ -1,24 +1,50 @@
 let primeiro = document.getElementById('pri_valor');
 let segundo = document.getElementById('sec_valor');
-let resultado = document.getSelection('#resultado')
-/*
-if(primeiro.length == 0 || segundo.length == 0){
-    alert('ok')
-}
-else{
-    
-}*/
+let resposta = document.getElementById('resposta')
+
+
 
 function somar(){
-    let total = Number(primeiro.value)+Number(segundo.value);
+    if(primeiro.value.length == 0 || segundo.value.length == 0){
+        alert('Valor inválido, preencha todos os valores')
+    }
+    else{
+        let total = Number(primeiro.value)+Number(segundo.value);
+        resposta.innerHTML = `A soma é: ${total}.`;
+         
+    }
+    
 }
 function subtrair(){
-     let total = Number(primeiro.value)-Number(segundo.value);
+    if(primeiro.value.length == 0 || segundo.value.length == 0){
+        alert('Valor inválido, preencha todos os valores')
+    }
+    else{
+        let total = Number(primeiro.value)-Number(segundo.value);
+        resposta.innerHTML =`A subtração é: ${total}.`;
+    }
 }
 function multiplicar(){
-    let total = Number(primeiro.value)*Number(segundo.value);
+    if(primeiro.value.length == 0 || segundo.value.length == 0){
+        alert('Valor inválido, preencha todos os valores')
+    }
+    else{
+        let total = Number(primeiro.value)*Number(segundo.value);
+        resposta.innerHTML = `A multiplicação é: ${total}.`;
+    }
 }
-alert(total);
+function dividir(){
+    if(primeiro.value.length == 0 || segundo.value.length == 0){
+        alert('Valor inválido, preencha todos os valores')
+    }
+    else{
+        let total = Number(primeiro.value)/Number(segundo.value);
+        resposta.innerHTML = `A divisão é: ${total}.`;
+    }
+}
+
+//primeiro = '';
+
 
 
 
